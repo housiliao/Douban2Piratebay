@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Douban2Piratebay Beta
 // @namespace    https://github.com/housiliao/Douban2Piratebay/
-// @version      0.6
+// @version      0.6.1
 // @description  And direct link to piratebay from douban movie page.
 // @author       bitdust&distbq
 // @match        https://movie.douban.com/subject/*
