@@ -57,7 +57,7 @@
        addLink(fragment, "torrent ",'https://www.google.com/search?hl=zh-CN&q=' + keyword + ' torrent');
        addLink(fragment, "\u80d6\u9e1f ", 'http://www.pniao.com/Mov/so/' + imdbindex);	//胖鸟
        addLink(fragment, "\u80d6\u6b21 ", 'http://www.panc.cc/s/' + keyword + '/td');	//胖次
-	   addLink(fragment, "BT\u4eba\u4eba ", 'http://www.btrenren.com/index.php/Search/index.html?search='+imbindex);	//BT人人
+	   addLink(fragment, "BT\u4eba\u4eba ", 'http://www.btrenren.com/index.php/Search/index.html?search=' + imdbindex);	//BT人人
 
 
        var br = document.createElement("br");
