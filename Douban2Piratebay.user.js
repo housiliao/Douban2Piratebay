@@ -26,7 +26,7 @@
 
 
     var title = $('html head title').text();
-    var keyword = title.replace( '(豆瓣)', '' ).trim();
+    var keyword = title.replace( '(\u8c46\u74e3)', '' ).trim();	//去掉标题中的 (豆瓣) 结尾
 
 
     var links =  document.querySelectorAll (
@@ -46,22 +46,22 @@
        var fragment = document.createDocumentFragment();
        var br = document.createElement("br");
        var span = imdblink.previousElementSibling.cloneNode(false);
-       span.textContent = "资源：";
+       span.textContent = "\u8d44\u6e90: ";	//资源
        fragment.appendChild(br);
        fragment.appendChild(span);
        addLink(fragment, "TPB ", 'https://thepiratebay.org/search/' + imdbindex);
        addLink(fragment, "RARGB ", 'https://rarbgmirror.com/torrents.php?imdb=' + imdbindex);
-       addLink(fragment, "HD湾 ", 'http://www.hdwan.net/?s=' + imdbindex);
-       addLink(fragment, "电影天堂 ", 'http://www.btrr.net/?s=' + imdbindex);
-       addLink(fragment, "ed2k  ", 'https://www.google.com/search?hl=zh-CN&q=' + keyword + ' ed2k');
-       addLink(fragment, "torrent  ",'https://www.google.com/search?hl=zh-CN&q=' + keyword + ' torrent');
-       addLink(fragment, "胖鸟  ", 'http://www.pniao.com/Mov/so/' + imdbindex);
-       addLink(fragment, "胖次  ", 'http://www.panc.cc/s/' + keyword + '/td');
+       addLink(fragment, "HD\u6e7e ", 'http://www.hdwan.net/?s=' + imdbindex);	//HD湾
+       addLink(fragment, "\u7535\u5f71\u5929\u5802 ", 'http://www.btrr.net/?s=' + imdbindex);	//电影天堂
+       addLink(fragment, "ed2k ", 'https://www.google.com/search?hl=zh-CN&q=' + keyword + ' ed2k');
+       addLink(fragment, "torrent ",'https://www.google.com/search?hl=zh-CN&q=' + keyword + ' torrent');
+       addLink(fragment, "\u80d6\u9e1f ", 'http://www.pniao.com/Mov/so/' + imdbindex);	//胖鸟
+       addLink(fragment, "\u80d6\u6b21 ", 'http://www.panc.cc/s/' + keyword + '/td');	//胖次
 
 
        var br = document.createElement("br");
        var span = imdblink.previousElementSibling.cloneNode(false);
-       span.textContent = "字幕： ";
+       span.textContent = "\u5b57\u5e55: ";	//字幕
        fragment.appendChild(br);
        fragment.appendChild(span);
        addLink(fragment, "zimuku  ", 'http://www.zimuku.cn/search?q=' + imdbindex);
